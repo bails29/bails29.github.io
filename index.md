@@ -1,6 +1,8 @@
+<!DOCTYPE html>
 <html>
-<body>
 <head>
-	<title> Bailey J. Anderson <title>
-<\head>
+	<title>Bailey J. Anderson</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 </html>
