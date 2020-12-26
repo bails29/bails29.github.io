@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+layout: page
+title: "Bailey J. Anderson Bio"
+permalink: /bio/
 <html>
 <head>
 	<title>Bailey J. Anderson Bio</title>
