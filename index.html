@@ -1,42 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Bailey J. Anderson Bio</title>
+---
+layout: default
+---
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
+<div class="blog-index">
+  {% assign index = true %}
+  {% for post in paginator.posts %}
+    {% assign content = post.content %}
+      <article>
+        {% include article.html %}
+      </article>
+  {% endfor %}
 
-	<!-- Site Header -->
-	<header>
-		<!-- h1: The most important headline (only one allowed per page by W3C standards) -->
-		<h1>Bailey J. Anderson</h1>
-	</header>
+  <div class="pagination">
+    <a href="/blog/archives">Blog Archives</a>
+    <a href="/blog/categories">Categories</a>
 
-	<div class="container">
-		<!-- Section 1: links -->
-		<section id="main-bio">
-			<!-- h2: Tier-2 Headline (Not as important as the h1 header, but more than one allowed). -->
-			<h2>Links</h2>
-			<ul>
-				<a href="/biography.html"><p>Biography</p></a>
-				<a href="/CV.html">CV: Coming Soon!</a></li>
-			</ul>
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
-		</section>
-
-		<!-- Section 2: Contact Information -->
-		<section id="contact-info">
-
-			<h2>Contact Information</h2>
-			
-			<ul>
-				<li><strong>Email:</strong> <a href="mailto:bailey.anderson@ouce.ox.ac.uk">bailey.anderson@ouce.ox.ac.uk</a></li>
-				<li><strong>Github:</strong> <a href="https://github.com/bails29">https://github.com/bails29/a></li>
-			</ul>
-
-		</section>
-	</div>
-
-</body>
-</html>
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Older</a>
+    {% endif %}
+  </div>
+</div>
