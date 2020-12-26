@@ -1,27 +1,33 @@
 ---
-layout: default
 ---
-<!DOCTYPE html>
-
-<div class="blog-index">
-<html>
-<head>
-	<title>Bailey J. Anderson Bio</title>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-    {% assign content = post.content %}
-      <article>
-        {% include article.html %}
-      </article>
-  {% endfor %}
-
-  <div class="pagination">
-    	<a href="/biography.html"><p>Biography</p></a>
-	<a href="/BA_teaching_CV.pdf">CV: Coming Soon!</a></li>
-
+layout: home
+title: Bailey J. Anderson
+description: Personal webpage for Bailey J Anderson
+permalink: /
+---
+---
+  <div class="container-lg p-responsive py-4 py-lg-6 my-xl-4 text-center">
+    <h1 class="alt-h1 mb-2 text-white">Bailey J. Anderson;software</h1>
+    <p class="f2-light text-white">DPhil Candidate.</p>
   </div>
-</div>
+</div><!-- ends .full-width that started in header.html -->
+
+<section class="container-lg p-responsive py-5 py-md-6 my-lg-6">
+  <div class="clearfix gutter-spacious">
+    <div class="mb-3 mb-md-5 col-md-6 float-left">
+      <h2 class="alt-h3 mb-2">
+        {% octicon terminal height:28 class:"fill-blue d-inline mr-2" aria-label:terminal %}
+        Collaborate on code
+      </h2>
+      <p class="text-gray">Code collaboration and review are built into the development process with GitHub. Share work, discuss changes, and get feedback in one place to write quality code.</p>
+    </div>
+    <div class="mb-3 mb-md-5 col-md-6 float-left">
+      <h2 class="alt-h3 mb-2">
+        {% octicon server height:28 class:"fill-blue d-inline mr-2" aria-label:server %}
+        On your servers or in the cloud
+      </h2>
+      <p class="text-gray">Run GitHub Enterprise on your servers as a virtual appliance, on <a href="{{"/aws-govcloud.html" | relative_url}}">AWS GovCloud</a> or Azure, or let us host the code for you on GitHub.com, whatever your security requires.</p>
+    </div>
+  </div>
+
 
