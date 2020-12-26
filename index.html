@@ -2,13 +2,14 @@
 layout: default
 ---
 <!DOCTYPE html>
+
+<div class="blog-index">
 <html>
 <head>
 	<title>Bailey J. Anderson Bio</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<div class="blog-index">
   {% assign index = true %}
   {% for post in paginator.posts %}
     {% assign content = post.content %}
