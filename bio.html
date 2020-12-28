@@ -40,26 +40,21 @@ div.center_icon{
   font-size: 20px;
   color: white;
 }
-.post-container {
+.post-container{
     margin: 20px 20px 0 0;  
-    border: 5px solid #333;
-    overflow: auto
+    border:5px solid #333;
 }
-.post-thumb {
-    float: left
-}
+
 .post-thumb img {
-    display: block
+    float: left;
+    clear:left;
+    margin-right:8px;
 }
-.post-content {
-    margin-left: 210px
+.post-title{
+    float:left;
 }
-.post-title {
-    font-weight: bold;
-    font-size: 200%;
-    padding: 9px;
-    background: #ccc
-} 
+.post-content {float:right;margin-right:8px;}
+.clear{clear:both;}
 html { overflow-y: visible; }
 </style>
 
@@ -73,15 +68,12 @@ html { overflow-y: visible; }
 
 
 <body>
-
 <div class="post-container">                
-    <div class="post-thumb"><img src="B_Anderson_photo.jpg" /></div>
-    <div class="post-content">
-        <h3 class="post-title">Post title</h3>
-        <p>post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc </p>
-   </div>
+   <div class="post-thumb"><img src="B_Anderson_photo.jpg"/></div>
+   <div class="post-title">Post title</div>
+   <div class="post-content"><p>post description description description etc etc etc</p></div>
+    <div class="clear"></div> 
 </div>
- 
 
 </body>
 </html>
