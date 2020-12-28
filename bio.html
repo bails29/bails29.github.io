@@ -45,11 +45,24 @@ div.center_icon{
   font-size: 20px;
   color: white;
 }
-img {
-  border: 1px solid #ddd; /* Gray border */
-  border-radius: 4px;  /* Rounded border */
-  padding: 5px; /* Some padding */
-  width: 150px; /* Set a small width */
+.content{
+    display: flex;
+    align-items: 50px;
+    justify-content: flex-start;
+}
+.content img {
+    width: 150px;
+}
+.details {
+    width: calc(100% - 200px);
+}
+@media only screen and (max-width: 480px) {
+    .content {
+        width: 150px;
+    }
+    .details {
+        width: 100%;
+    }
 }
 
  /* The sidebar menu */
@@ -112,15 +125,14 @@ html { overflow-y: visible; }
 </div>
 
 <body>
-
-<a target="_blank" href="B_Anderson_photo.jpg">
-  <img src="B_Anderson_photo.jpg" alt="Bailey">
-</a>
+<div class="content">
+    <img src="B_Anderson_photo.jpg" alt="" />
     <div class="details">
         <p>My name is Bailey, and I <br>will write a bio eventually. :) :)<br> hmbjjjjjjjjjjjjjjjjjjjjjjjjhhhhhhhhhhhhhhhhhhhasddddddddddd<br>
 aDSDFsdgsdgsdgsdgsd<br>sfyhhfytyttrrtrrtytrttrtrtytdfffffffffff<br>dsffggggggggggggggggggggggggggggffffffffff<br>syuuuuuuuuuuuuuuuuuuuuuuuuuuudffffffffffasfasf<br> sdsdgyuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu<br>
 ashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhas<br>asfiyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiasf<br>asuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuufasf<br>asf<br>
 sdgsdg<br>adafs<br>asfaf<br>sdsdbsdb</p>
+    </div>
 </div>
 
 </body>
