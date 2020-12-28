@@ -11,7 +11,7 @@
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, 50%);
 }
@@ -40,21 +40,25 @@ div.center_icon{
   font-size: 20px;
   color: white;
 }
-.post-container{
-    margin: 20px 20px 0 0;  
-    border:5px solid #333;
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-
-.post-thumb img {
-    float: left;
-    clear:left;
-    margin-right:8px;
+.content img {
+    width: 150px;
 }
-.post-title{
-    float:left;
+.details {
+    width: calc(100% - 150px);
 }
-.post-content {float:right;margin-right:8px;}
-.clear{clear:both;}
+@media only screen and (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+    .details {
+        width: 100%;
+    }
+}
 html { overflow-y: visible; }
 </style>
 
@@ -66,13 +70,11 @@ html { overflow-y: visible; }
     </div>
 </header>
 
-
-<body>
-<div class="post-container">                
-   <div class="post-thumb"><img src="B_Anderson_photo.jpg"/></div>
-   <div class="post-title">Post title</div>
-   <div class="post-content"><p>post description description description etc etc etc</p></div>
-    <div class="clear"></div> 
+<div class="content">
+    <img src="B_Anderson_photo.jpg" alt="" />
+    <div class="details">
+        <p>Lorem ipsum dolor sit amet...</p>
+    </div>
 </div>
 
 </body>
