@@ -40,20 +40,25 @@ div.center_icon{
   font-size: 20px;
   color: white;
 }
-.column1 {
-  float: left;
-  width: 25%;
-  padding: 5px;
+.post-container {
+    margin: 20px 20px 0 0;  
+    border: 5px solid #333;
+    overflow: auto
 }
-.column2 {
-  float: left;
-  width: 75%;
-  padding: 5px;
+.post-thumb {
+    float: left
 }
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.post-thumb img {
+    display: block
+}
+.post-content {
+    margin-left: 210px
+}
+.post-title {
+    font-weight: bold;
+    font-size: 200%;
+    padding: 9px;
+    background: #ccc
 } 
 html { overflow-y: visible; }
 </style>
@@ -69,14 +74,13 @@ html { overflow-y: visible; }
 
 <body>
 
-<div class="row">
-  <div class="column1">
-    <img src="B_Anderson_photo.jpg" alt="bailey" style="width:100%">
-  </div>
-  <div class="column2">
-     <p> test <br> ughjjjjjjjjjjjjjjj</p>
-  </div>
-</div> 
+<div class="post-container">                
+    <div class="post-thumb"><img src="B_Anderson_photo.jpg" /></div>
+    <div class="post-content">
+        <h3 class="post-title">Post title</h3>
+        <p>post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc </p>
+   </div>
+</div>
  
 
 </body>
