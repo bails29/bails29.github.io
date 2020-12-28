@@ -40,21 +40,25 @@ div.center_icon{
   font-size: 20px;
   color: white;
 }
-body { 
-			margin: 20px; 
-			text-align: center; 
-		} 
-		h1 { 
-			color: green; 
-		} 
-		img { 
-			float: left; 
-			margin: 5px; 
-		} 
-		p { 
-			text-align: justify; 
-			font-size: 25px; 
-		} 
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.content img {
+    width: 150px;
+}
+.details {
+    width: calc(100% - 155px);
+}
+@media only screen and (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+    .details {
+        width: 100%;
+    }
+}
 html { overflow-y: visible; }
 </style>
 
@@ -66,16 +70,13 @@ html { overflow-y: visible; }
     </div>
 </header>
 
-	<h1>Bailey Anderson's Bio</h1> 
-	
-	<div class="square"> 
-		<div> 
-			<img src="B_Anderson_photo.jpg" alt="Longtail boat in Thailand"> 
-		</div> 
-		
-		<p> my name is bailey and I will write a bio eventuallly. :):) 
-		</p> 
-	</div> 
+<div class="content">
+    <img src="B_Anderson_photo.jpg" alt="" />
+    <div class="details">
+        <p>Lorem ipsum dolor sit amet...</p>
+        <p>My name is Bailey, and I will write a bio eventually. :)</p>
+    </div>
+</div>
 
 </body>
 </html>
