@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
+div.centered {
+  font-size: 40px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white; /* white text */
+  padding: 20px; /* Some padding */
+}
+.left_icon {
+  position: absolute;
+  top: 99%;
+  left: 2%;
+  transform: translate(-2%, -99%);
+}
+.right_icon {
+  position: absolute;
+  top: 99%;
+  right: 2%;
+  transform: translate(2%, -99%);
+}
+.center_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white; /* white text */
+  padding: 10px; /* Some padding */
+}
+div.center_icon{
+  font-size: 20px;
+  color: white;
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.content img {
+    width: 150px;
+}
+.details {
+    width: calc(100% - 150px);
+}
+@media only screen and (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+    .details {
+        width: 100%;
+    }
+}
+/* The sidebar menu */
+.sidenav {
+  width: 50px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: white; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 6px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style page content */
+.main {
+  margin-top: 200px;
+  margin-left: 50px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+html { overflow-y: visible; }
+
+</style>
+
+<header id="header-background">
+    <div class="logo"></div>
+	<a class="active" href="\" ><img src="gracie.jpg" alt="image" style="width:100%; height:80%;" /></a>
+  	<div class="centered">Bio</div>
+	</div>
+    </div>
+</header>
