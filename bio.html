@@ -11,9 +11,9 @@
 
 .centered {
   position: absolute;
-  top: 47%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -47%);
+  transform: translate(-50%, 40%);
 }
 div.centered {
   font-size: 40px;
@@ -40,26 +40,25 @@ div.center_icon{
   font-size: 20px;
   color: white;
 }
-.post-container {
-    margin: 20px 20px 0 0;  
-    border: 5px solid #333;
-    overflow: auto
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-.post-thumb {
-    float: left
+.content img {
+    width: 150px;
 }
-.post-thumb img {
-    display: block
+.details {
+    width: calc(100% - 150px);
 }
-.post-content {
-    margin-left: 210px
+@media only screen and (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+    .details {
+        width: 100%;
+    }
 }
-.post-title {
-    font-weight: bold;
-    font-size: 200%;
-    padding: 9px;
-    background: #ccc
-} 
 html { overflow-y: visible; }
 </style>
 
@@ -71,17 +70,12 @@ html { overflow-y: visible; }
     </div>
 </header>
 
-
-<body>
-
-<div class="post-container">                
-    <div class="post-thumb"><img src="B_Anderson_photo.jpg" /></div>
-    <div class="post-content">
-        <h3 class="post-title">Post title</h3>
-        <p>post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc post desc </p>
-   </div>
+<div class="content">
+    <img src="B_Anderson_photo.jpg" alt="" />
+    <div class="details">
+        <p>Lorem ipsum dolor sit amet...</p>
+    </div>
 </div>
- 
 
 </body>
 </html>
