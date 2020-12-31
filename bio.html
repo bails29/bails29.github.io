@@ -11,17 +11,12 @@
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -47%);
 }
 div.centered {
   font-size: 40px;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: white; /* white text */
-  width: 20%; /* Full width */
-  padding: 40px; /* Some padding */
 }
 .left_icon {
   position: absolute;
@@ -45,95 +40,58 @@ div.center_icon{
   font-size: 20px;
   color: white;
 }
-.content{
-    display: flex;
-    align-items: flex;
-    justify-content: flex-start;
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
 }
-.content img {
-    width: 150px;
-}
-.details {
-    width: calc(100% - 200px);
-}
-@media only screen and (max-width: 480px) {
-    .content {
-        width: 150px;
-    }
-    .details {
-        width: 100%;
-    }
-}
-
- /* The sidebar menu */
-.sidenav {
-  width: 50px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: white; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 6px;
-  color: #818181;
-  display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style page content */
-.main {
-  margin-top: 200px;
-  margin-left: 50px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 } 
 html { overflow-y: visible; }
-
 </style>
-
 
 <header id="header-background">
     <div class="logo"></div>
-	<a class="active" href="\" ><img src="gracie.jpg" alt="image" style="width:100%; height:80%;" /></a>
-    <div class="centered">Bio</div>
-        </div>
+  	<img src="gracie.jpg" alt="image" style="width:100%; height:80%;">
+  	<div class="centered">Bio</div>
+	</div>
     </div>
 </header>
 
 
-<!-- The sidebar -->
-<div class="sidenav">
-  <a class="active" href="mailto:bailey.anderson@ouce.ox.ac.uk" ><img src="email-32.png" alt="email" /></a>
-  <a target="_self" href="https://github.com/bails29" target="_blank"><img  src="GitHub-Mark-32px.png" alt="github" /></a>
-  <a target="_self" href="https://twitter.com/bails_anderson" target="_blank"><img  src="twitter-32.png" alt="twitter" /></a>
-  <a target="_self" href="/" target="_blank"><img  src="home-32.png" alt="home" /></a>
-</div>
-
 <body>
-<div class="content">
-    <img src="B_Anderson_photo.jpg" alt="" />
-    <div class="details">
-        <p>My name is Bailey, and I <br>will write a bio eventually. :) :)<br> hmbjjjjjjjjjjjjjjjjjjjjjjjjhhhhhhhhhhhhhhhhhhhasddddddddddd<br>
-aDSDFsdgsdgsdgsdgsd<br>sfyhhfytyttrrtrrtytrttrtrtytdfffffffffff<br>dsffggggggggggggggggggggggggggggffffffffff<br>syuuuuuuuuuuuuuuuuuuuuuuuuuuudffffffffffasfasf<br> sdsdgyuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu<br>
-ashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhas<br>asfiyiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiasf<br>asuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuufasf<br>asf<br>
-sdgsdg<br>adafs<br>asfaf<br>sdsdbsdb</p>
-    </div>
-</div>
+
+<div class="row">
+  <div class="column">
+    <img src="B_Anderson_photo.jpg" alt="bailey" style="width:100%">
+  </div>
+  <div class="column">
+     <p> test ughjjjjjjjjjjjjjjj <br>
+nnjkkkkkkkkkkkkkkkkkkkkkk <br>
+jkkkkkkkkkkkkkkkkkkk<br>
+jkhhkhkhgfdyrrrrrrrrrrr<br>
+rbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>
+bbbbbbb</p>
+  </div>
+</div> 
+ 
 
 </body>
 </html>
