@@ -59,16 +59,62 @@ div.center_icon{
         width: 100%;
     }
 }
+/* The sidebar menu */
+.sidenav {
+  width: 50px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 6px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style page content */
+.main {
+  margin-top: 200px;
+  margin-left: 50px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
 html { overflow-y: visible; }
+
 </style>
 
 <header id="header-background">
     <div class="logo"></div>
-  	<img src="gracie.jpg" alt="image" style="width:100%; height:80%;">
+	<a class="active" href="\" ><img src="gracie.jpg" alt="image" style="width:100%; height:80%;" /></a>
   	<div class="centered">Bio</div>
 	</div>
     </div>
 </header>
+
+<!-- The sidebar -->
+<div class="sidenav">
+  <a class="active" href="mailto:bailey.anderson@ouce.ox.ac.uk" ><img src="email-32.png" alt="email" /></a>
+  <a target="_self" href="https://github.com/bails29" target="_blank"><img  src="GitHub-Mark-32px.png" alt="github" /></a>
+  <a target="_self" href="https://twitter.com/bails_anderson" target="_blank"><img  src="twitter-32.png" alt="twitter" /></a>
+  <a target="_self" href="/" target="_blank"><img  src="home-32.png" alt="home" /></a>
+</div>
 
 <div class="content">
     <img src="B_Anderson_photo.jpg" alt="" />
