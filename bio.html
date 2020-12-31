@@ -11,12 +11,16 @@
 
 .centered {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
-  transform: translate(-50%, 40%);
+  transform: translate(-50%, -35%);
 }
 div.centered {
   font-size: 40px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white; /* white text */
+  padding: 20px; /* Some padding */
 }
 .left_icon {
   position: absolute;
@@ -107,7 +111,7 @@ html { overflow-y: visible; }
 <header id="header-background">
     <div class="logo"></div>
 	<a class="active" href="\" ><img src="gracie.jpg" alt="image" style="width:100%; height:80%;" /></a>
-  	<div class="center_icon">Bio</div>
+  	<div class="centered">Bio</div>
 	</div>
     </div>
 </header>
