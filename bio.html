@@ -100,10 +100,21 @@ div.center_icon{
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 650px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 1em;}
+  .centered{
+    padding: .9%; /* Some padding */
+  }
+  .center_icon {
+    top: 15%;
+    left: 50%;
+    padding: .8%; /* Some padding */
+    transform: translate(-50%, -15%);
+  }
 } 
+
+
 html { overflow-y: visible; }
 
 </style>

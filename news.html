@@ -29,18 +29,7 @@ div.centered {
   right: 2%;
   transform: translate(2%, -99%);
 }
-.center_icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: white; /* white text */
-  padding: 10px; /* Some padding */
-  font-size: 1.2 em;
-  color: white;
-}
+
  /* Three columns side by side */
 .column {
   float: left;
@@ -121,6 +110,18 @@ div.centered {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 1 em;}
 } 
+@media screen and (max-width: 650px) {
+  .centered{
+    padding: .9%; /* Some padding */
+  }
+  .center_icon {
+    top: 15%;
+    left: 50%;
+    padding: .8%; /* Some padding */
+    transform: translate(-50%, -15%);
+  }
+}
+
 html { overflow-y: visible; }
 
 </style>
