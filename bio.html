@@ -3,12 +3,17 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -35%);
 }
 div.centered {
   font-size:2.9vw;
@@ -28,6 +33,20 @@ div.centered {
   top: 99%;
   right: 2%;
   transform: translate(2%, -99%);
+}
+.center_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white; /* white text */
+  padding: 10px; /* Some padding */
+}
+div.center_icon{
+  font-size: 1.5em;
+  color: white;
 }
 .content{
     display: flex;
@@ -86,7 +105,12 @@ div.centered {
   .sidenav a {font-size: 1em;}
   .centered{
     padding: .9%; /* Some padding */
-    top: 10%;
+  }
+  .center_icon {
+    top: 15%;
+    left: 50%;
+    padding: .8%; /* Some padding */
+    transform: translate(-50%, -15%);
   }
 } 
 
