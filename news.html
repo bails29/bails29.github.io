@@ -17,11 +17,32 @@ div.centered {
   color: white; /* white text */
   padding: 20px; /* Some padding */
 }
-@media screen and (max-height: 450px) {
-  .centered {  position: relative;
-  .centered {  top: 10%;
-} 
-
+.left_icon {
+  position: absolute;
+  top: 99%;
+  left: 2%;
+  transform: translate(-2%, -99%);
+}
+.right_icon {
+  position: absolute;
+  top: 99%;
+  right: 2%;
+  transform: translate(2%, -99%);
+}
+.center_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white; /* white text */
+  padding: 10px; /* Some padding */
+}
+div.center_icon{
+  font-size: 20px;
+  color: white;
+}
  /* Three columns side by side */
 .column {
   float: left;
