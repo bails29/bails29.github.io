@@ -18,13 +18,13 @@ div.centered {
   padding: 20px; /* Some padding */
 }
 .left_icon {
-  position: absolute;
+  position: relative;
   top: 99%;
   left: 2%;
   transform: translate(-2%, -99%);
 }
 .right_icon {
-  position: absolute;
+  position: relative;
   top: 99%;
   right: 2%;
   transform: translate(2%, -99%);
@@ -38,8 +38,6 @@ div.centered {
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: white; /* white text */
   padding: 10px; /* Some padding */
-}
-div.center_icon{
   font-size: 1.2 em;
   color: white;
 }
@@ -122,7 +120,6 @@ div.center_icon{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 1 em;}
-  .centered {position: relative;}
 } 
 html { overflow-y: visible; }
 
