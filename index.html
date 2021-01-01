@@ -27,14 +27,12 @@ div.centered {
   top: 99%;
   left: 2%;
   transform: translate(-2%, -99%);
-  font-size: .7 em;
 }
 .right_icon {
   position: absolute;
   top: 99%;
   right: 2%;
   transform: translate(2%, -99%);
-  font-size: .2 em;
 }
 .center_icon {
   position: absolute;
@@ -47,6 +45,16 @@ div.centered {
   padding: 10px; /* Some padding */
   font-size: 1.1 em;
   color: white;
+}
+@media screen and (max-width: 650px) {
+  .left_icon {
+    width: 100%;
+    display: block;
+  }
+  .right_icon {
+    width: 100%;
+    display: block;
+  }
 }
 
 html { overflow-y: hidden; }
