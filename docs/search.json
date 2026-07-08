@@ -4,7 +4,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "My research focuses on how catchments respond to hydroclimatic extremes, and why apparently similar places can behave differently under similar conditions."
+    "text": "&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\nMy research focuses on how catchments respond to hydroclimatic extremes, and why apparently similar places can behave differently under similar conditions.\n::: {.research-section}\n=======\nMy research focuses on how catchments respond to hydroclimatic extremes, and why apparently similar places can behave differently under similar conditions."
   },
   {
     "objectID": "research.html#hydrological-response",
@@ -28,11 +28,32 @@
     "text": "Methods\nADD"
   },
   {
+    "objectID": "research.html#hydrological-response-1",
+    "href": "research.html#hydrological-response-1",
+    "title": "Research",
+    "section": "Hydrological Response",
+    "text": "Hydrological Response\nADD"
+  },
+  {
+    "objectID": "research.html#variability-and-whiplash-1",
+    "href": "research.html#variability-and-whiplash-1",
+    "title": "Research",
+    "section": "Variability and Whiplash",
+    "text": "Variability and Whiplash\nADD"
+  },
+  {
+    "objectID": "research.html#methods-1",
+    "href": "research.html#methods-1",
+    "title": "Research",
+    "section": "Methods",
+    "text": "Methods\nADD"
+  },
+  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "CV",
     "section": "",
-    "text": "I am currently a postdoctoral researcher at the WSL Institute for Snow and Avalanche Research and ETH Zurich\nYou can download my current CV here:\nDownload CV"
+    "text": "&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\nI am currently a postdoctoral researcher at the WSL Institute for Snow and Avalanche Research and ETH Zurich\nYou can download my current CV here:\n\nDownload CV\nI am currently a postdoctoral researcher at the WSL Institute for Snow and Avalanche Research and ETH Zurich\nYou can download my current CV here:\nDownload CV &gt;&gt;&gt;&gt;&gt;&gt;&gt; b30ac3677a249c3a9e8a17a28c6409a2a0d69579"
   },
   {
     "objectID": "about.html",
@@ -42,18 +63,18 @@
     "text": "About this site"
   },
   {
-    "objectID": "index.html#hydrologist-studying-catchment-response-diversity",
-    "href": "index.html#hydrologist-studying-catchment-response-diversity",
-    "title": "Bailey Anderson",
-    "section": "Hydrologist studying catchment response diversity",
-    "text": "Hydrologist studying catchment response diversity\nI seek to understand why apparently similar catchments respond differently to similar forcings, and how those responses emerge from interacting hydrological processes across space and time.\nResearch Download CV"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bailey J. Anderson",
+    "section": "",
+    "text": "&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\n::: {.home-layout}\n======="
   },
   {
-    "objectID": "index.html#research",
-    "href": "index.html#research",
-    "title": "Bailey Anderson",
-    "section": "Research",
-    "text": "Research\n\n\n\n\nCatchment response diversity\nWhy do apparently similar catchments respond differently?\n\n\n\n\n\nHydroclimatic extremes\nUnderstanding floods, droughts and seasonal streamflow.\n\n\n\n\n\nHydrological processes\nIntegrating observations, modelling and large-sample hydrology."
+    "objectID": "index.html#hydrologist",
+    "href": "index.html#hydrologist",
+    "title": "Bailey J. Anderson",
+    "section": "Hydrologist",
+    "text": "Hydrologist\nI seek to understand why apparently similar catchments respond differently to similar forcings, and how those responses emerge from interacting hydrological processes across space and time.\nResearch Download CV"
   },
   {
     "objectID": "index.html#research-themes",
@@ -63,10 +84,17 @@
     "text": "Research Themes\n\n\n\n\nCatchment response diversity\nWhy do apparently similar catchments respond differently?\n\n\n\n\n\nHydroclimatic extremes\nUnderstanding floods, droughts and seasonal streamflow.\n\n\n\n\n\nHydrological processes\nIntegrating observations, modelling and large-sample hydrology."
   },
   {
-    "objectID": "index.html#hydrologist",
-    "href": "index.html#hydrologist",
+    "objectID": "index.html#hydrologist-1",
+    "href": "index.html#hydrologist-1",
     "title": "Bailey J. Anderson",
     "section": "Hydrologist",
     "text": "Hydrologist\nI seek to understand why apparently similar catchments respond differently to similar forcings, and how those responses emerge from interacting hydrological processes across space and time.\nResearch Download CV"
+  },
+  {
+    "objectID": "index.html#research-themes-1",
+    "href": "index.html#research-themes-1",
+    "title": "Bailey J. Anderson",
+    "section": "Research Themes",
+    "text": "Research Themes\n\n\n\n\nCatchment response diversity\nWhy do apparently similar catchments respond differently?\n\n\n\n\n\nHydroclimatic extremes\nUnderstanding floods, droughts and seasonal streamflow.\n\n\n\n\n\nHydrological processes\nIntegrating observations, modelling and large-sample hydrology."
   }
 ]
