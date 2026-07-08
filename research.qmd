@@ -1,0 +1,35 @@
+---
+title: "Research"
+---
+
+My research focuses on how catchments respond to hydroclimatic extremes, and why apparently similar places can behave differently under similar conditions.
+
+::: {.research-section}
+![](images/diversity.jpg)
+
+::: {.research-section-text}
+## Hydrological Response
+
+ADD
+:::
+:::
+
+::: {.research-section}
+![](images/extremes.jpg)
+
+::: {.research-section-text}
+## Variability and Whiplash
+
+ADD
+:::
+:::
+
+::: {.research-section}
+![](images/processes.jpg)
+
+::: {.research-section-text}
+## Methods
+
+ADD
+:::
+:::
