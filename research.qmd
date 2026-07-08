@@ -28,7 +28,7 @@ ADD
 ![](images/processes.jpg)
 
 ::: {.research-section-text}
-## Methods
+## Methodology
 
 ADD
 :::

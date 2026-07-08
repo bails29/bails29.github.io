@@ -35,10 +35,10 @@ I seek to understand why apparently similar catchments respond differently to si
 ::: {.research-grid}
 
 ::: {.research-card}
-[![](images/diversity.jpg){alt="Catchment response diversity"}](research.html#catchment-response-diversity)
+[![](images/diversity.jpg){alt="Hydrological response"}](research.html#catchment-response-diversity)
 
 ::: {.research-card-text}
-### [Catchment response diversity](research.html#catchment-response-diversity)
+### [Hydrological response](research.html#catchment-response-diversity)
 
 Why do apparently similar catchments respond differently?
 :::
@@ -55,10 +55,10 @@ Understanding rapid state changes in streamflow.
 :::
 
 ::: {.research-card}
-[![](images/processes.jpg){alt="Hydrological processes"}](research.html#hydrological-processes)
+[![](images/processes.jpg){alt="Methodology"}](research.html#hydrological-processes)
 
 ::: {.research-card-text}
-### [Hydrological processes](research.html#hydrological-processes)
+### [Methodology](research.html#hydrological-processes)
 
 Challenging how methodological choices influence scientific conclusions.
 :::
