@@ -53,9 +53,9 @@ Why do apparently similar catchments respond differently?
 ::: {.research-card}
 ![](images/extremes.jpg)
 
-### Hydroclimatic extremes
+### Variability and Whiplash
 
-Understanding floods, droughts and seasonal streamflow.
+Understanding rapid state changes in streamflow.
 :::
 
 ::: {.research-card}
@@ -63,7 +63,7 @@ Understanding floods, droughts and seasonal streamflow.
 
 ### Hydrological processes
 
-Integrating observations, modelling and large-sample hydrology.
+Challenging how methodological choices influence scientific conclusions.
 :::
 
 :::
