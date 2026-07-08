@@ -37,32 +37,35 @@ I seek to understand why apparently similar catchments respond differently to si
 
 [Research](research.qmd){.button} [Download CV](cv.qmd){.button}
 
-## Research Themes
+<h2>Research Themes</h2>
 
-::: {.research-grid}
+<div class="research-grid">
 
-::: {.research-card}
-![](images/diversity.jpg)
+<a class="research-card" href="research.html#catchment-response-diversity">
+  <img src="images/diversity.jpg" alt="Catchment response diversity">
+  <div>
+    <h3>Catchment response diversity</h3>
+    <p>Why do apparently similar catchments respond differently?</p>
+  </div>
+</a>
 
-### Catchment response diversity
+<a class="research-card" href="research.html#variability-and-whiplash">
+  <img src="images/extremes.jpg" alt="Variability and whiplash">
+  <div>
+    <h3>Variability and Whiplash</h3>
+    <p>Understanding rapid state changes in streamflow.</p>
+  </div>
+</a>
 
-Why do apparently similar catchments respond differently?
-:::
+<a class="research-card" href="research.html#hydrological-processes">
+  <img src="images/processes.jpg" alt="Hydrological processes">
+  <div>
+    <h3>Hydrological processes</h3>
+    <p>Challenging how methodological choices influence scientific conclusions.</p>
+  </div>
+</a>
 
-::: {.research-card}
-![](images/extremes.jpg)
-
-### Variability and Whiplash
-
-Understanding rapid state changes in streamflow.
-:::
-
-::: {.research-card}
-![](images/processes.jpg)
-
-### Hydrological processes
-
-Challenging how methodological choices influence scientific conclusions.
+</div>
 :::
 
 :::
