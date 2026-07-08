@@ -1,0 +1,9 @@
+---
+title: "CV"
+---
+
+I am currently a postdoctoral researcher at the WSL Institute for Snow and Avalanche Research and ETH Zurich 
+
+You can download my current CV here:
+
+[Download CV](cv/Bailey_Anderson_CV.pdf){.button}
