@@ -8,21 +8,15 @@
 
 ![](images/portrait.jpg)
 
-<div class="profile-links-vertical">
+::: {.profile-links-vertical}
 
-<a href="mailto:bailey.anderson@slf.ch">
-<i class="bi bi-envelope-fill"></i> Email
-</a>
+[{{< iconify bi envelope-fill >}} Email](mailto:bailey.anderson@slf.ch)
 
-<a href="https://scholar.google.com/citations?user=40Ppn9IAAAAJ" target="_blank">
-<i class="bi bi-mortarboard-fill"></i> Google Scholar
-</a>
+[{{< iconify bi mortarboard-fill >}} Google Scholar](https://scholar.google.com/citations?user=40Ppn9IAAAAJ){target="_blank"}
 
-<a href="https://www.slf.ch/en/staff/anderson/" target="_blank">
-<i class="bi bi-building"></i> WSL / ETH
-</a>
+[{{< iconify bi building >}} WSL / ETH](https://www.slf.ch/en/staff/anderson/){target="_blank"}
 
-</div>
+:::
 
 :::
 
@@ -38,33 +32,39 @@ I seek to understand why apparently similar catchments respond differently to si
 
 ## Research Themes
 
-<div class="research-grid">
+::: {.research-grid}
 
-<a class="research-card" href="research.html#catchment-response-diversity">
-  <img src="images/diversity.jpg" alt="Catchment response diversity">
-  <div>
-    <h3>Catchment response diversity</h3>
-    <p>Why do apparently similar catchments respond differently?</p>
-  </div>
-</a>
+::: {.research-card}
+[![](images/diversity.jpg){alt="Catchment response diversity"}](research.html#catchment-response-diversity)
 
-<a class="research-card" href="research.html#variability-and-whiplash">
-  <img src="images/extremes.jpg" alt="Variability and whiplash">
-  <div>
-    <h3>Variability and Whiplash</h3>
-    <p>Understanding rapid state changes in streamflow.</p>
-  </div>
-</a>
+::: {.research-card-text}
+### [Catchment response diversity](research.html#catchment-response-diversity)
 
-<a class="research-card" href="research.html#hydrological-processes">
-  <img src="images/processes.jpg" alt="Hydrological processes">
-  <div>
-    <h3>Hydrological processes</h3>
-    <p>Challenging how methodological choices influence scientific conclusions.</p>
-  </div>
-</a>
+Why do apparently similar catchments respond differently?
+:::
+:::
 
-</div>
+::: {.research-card}
+[![](images/extremes.jpg){alt="Variability and whiplash"}](research.html#variability-and-whiplash)
+
+::: {.research-card-text}
+### [Variability and Whiplash](research.html#variability-and-whiplash)
+
+Understanding rapid state changes in streamflow.
+:::
+:::
+
+::: {.research-card}
+[![](images/processes.jpg){alt="Hydrological processes"}](research.html#hydrological-processes)
+
+::: {.research-card-text}
+### [Hydrological processes](research.html#hydrological-processes)
+
+Challenging how methodological choices influence scientific conclusions.
+:::
+:::
+
+:::
 
 :::
 

@@ -1,8 +1,10 @@
+```css
 .page-columns,
 .page-layout,
 main.content,
 .quarto-container {
-    max-width: 1600px;
+  max-width: none;
+  width: 100%;
 }
 
 /* ==========================================================
@@ -16,17 +18,39 @@ main.content,
   --charcoal: #222222;
 }
 
-
 /* ==========================================================
    General
    ========================================================== */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: var(--charcoal);
   background: white;
-  line-height: 1.65;
-  font-size: 1.05rem;
+  line-height: 1.6;
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+}
+
+h1 {
+  font-size: clamp(1.6rem, 1.3rem + 1vw, 2.2rem);
+}
+
+h2 {
+  font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.6rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 1rem + 0.4vw, 1.3rem);
 }
 
 h1,
@@ -44,6 +68,9 @@ a:hover {
   color: var(--forest-light);
 }
 
+img {
+  max-width: 100%;
+}
 
 /* ==========================================================
    Navigation
@@ -51,13 +78,12 @@ a:hover {
 
 .navbar {
   border-bottom: 1px solid #e6e2d8;
-  font-size: 0.95rem;
+  font-size: clamp(0.8rem, 0.75rem + 0.2vw, 0.9rem);
 }
 
 .navbar-title {
   color: var(--forest) !important;
 }
-
 
 /* ==========================================================
    Hero Image
@@ -70,15 +96,11 @@ a:hover {
 }
 
 .hero-full img {
-  width: 100vw;
-  height: clamp(420px, 55vh, 760px);
+  width: 100%;
+  height: clamp(260px, 45vh, 600px);
   object-fit: cover;
   display: block;
   border-radius: 0;
-}
-
-body {
-  margin: 0;
 }
 
 /* ==========================================================
@@ -87,29 +109,26 @@ body {
 
 .home-layout {
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
+  grid-template-columns: clamp(180px, 16vw, 260px) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
 
-  gap: 4rem;
-
-  width: min(1600px, 96vw);
-
-  margin: 3rem auto;
-
-  padding: 0;
+  width: min(96vw, 1400px);
+  margin: clamp(1.5rem, 4vw, 3rem) auto;
+  padding-inline: clamp(0.75rem, 2vw, 1.5rem);
 }
 
 .home-sidebar {
   position: sticky;
-  top: 6rem;
+  top: 5rem;
   align-self: start;
 }
 
 .home-sidebar img {
-  width: 230px;
-  height: 230px;
+  width: clamp(150px, 14vw, 200px);
+  height: clamp(150px, 14vw, 200px);
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid var(--cream);
+  border: 4px solid var(--cream);
   display: block;
 }
 
@@ -122,32 +141,29 @@ body {
    ========================================================== */
 
 .profile-links-vertical {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 .profile-links-vertical a {
   display: flex;
   align-items: center;
-  gap: .6rem;
-
+  gap: 0.5rem;
   text-decoration: none;
   color: var(--forest);
-
-  margin-bottom: .9rem;
-
-  transition: .2s;
+  margin-bottom: 0.7rem;
+  transition: 0.2s;
+  font-size: clamp(0.85rem, 0.8rem + 0.2vw, 0.95rem);
 }
 
 .profile-links-vertical a:hover {
-  transform: translateX(4px);
+  transform: translateX(3px);
   color: var(--forest-light);
 }
 
 .profile-links-vertical i {
-  width: 18px;
-  font-size: 1.1rem;
+  width: 16px;
+  font-size: 1rem;
 }
-
 
 /* ==========================================================
    Buttons
@@ -155,17 +171,14 @@ body {
 
 .button {
   display: inline-block;
-
-  padding: .7rem 1rem;
-
-  margin-top: 1rem;
-  margin-right: .6rem;
-
+  padding: 0.55rem 0.85rem;
+  margin-top: 0.8rem;
+  margin-right: 0.5rem;
   border: 1px solid var(--forest);
   border-radius: 4px;
-
   color: var(--forest);
   text-decoration: none;
+  font-size: clamp(0.8rem, 0.75rem + 0.2vw, 0.9rem);
 }
 
 .button:hover {
@@ -173,81 +186,141 @@ body {
   color: white;
 }
 
-
 /* ==========================================================
    Homepage Research Cards
    ========================================================== */
 
 .research-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 2rem 0 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0 3rem 0;
+  max-width: 900px;
+  width: 100%;
 }
 
 .research-card {
-    display: grid;
-    grid-template-columns: 320px 1fr;
-
-    background: white;
-
-    border-radius: 8px;
-
-    overflow: hidden;
-
-    text-decoration: none;
-
-    color: inherit;
-
-    box-shadow: 0 4px 14px rgba(0,0,0,.08);
-
-    transition: .25s;
+  display: grid;
+  grid-template-columns: minmax(180px, 30%) minmax(0, 1fr);
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  color: inherit;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+  min-width: 0;
+  max-width: 100%;
 }
 
-.research-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(0,0,0,.15);
+.research-card > p:first-child {
+  margin: 0;
+  min-width: 0;
+}
+
+.research-card > p:first-child a {
+  display: block;
+  height: 100%;
+}
+
+.research-card {
+    grid-template-columns: 32% 1fr;
 }
 
 .research-card img {
     width: 100%;
-    height: 100%;
-    min-height: 220px;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
+    display: block;
+}
+
+.research-card-text {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  padding: 1.1rem 1.2rem;
+  overflow-wrap: anywhere;
+}
+
+.research-card-text h3,
+.research-card-text p,
+.research-card-text a {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.research-card-text h3 {
+  margin: 0 0 0.4rem 0;
+}
+
+.research-card-text p {
+  margin: 0;
+  font-size: clamp(0.85rem, 0.8rem + 0.2vw, 0.95rem);
+}
+
+.research-card-text a {
+  text-decoration: none;
+}
+
+.research-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.research-card {
+  display: grid;
+  grid-template-columns: minmax(200px, 30%) minmax(0, 1fr);
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+}
+
+.research-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.research-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  object-fit: cover;
 }
 
 .research-card h3 {
-    margin: 1.5rem 1.5rem .5rem;
+  margin: 1.2rem 1.2rem 0.4rem;
 }
 
 .research-card p {
-    margin: 0 1.5rem 1.5rem;
+  margin: 0 1.2rem 1.2rem;
+  font-size: clamp(0.85rem, 0.8rem + 0.2vw, 0.95rem);
 }
-
 
 /* ==========================================================
    Research Page Sections
    ========================================================== */
 
 .research-section {
-    display: grid;
-    grid-template-columns: 420px 1fr;
-
-    gap: 3rem;
-
-    width: 100%;
-
-    margin: 5rem 0;
-
-    align-items: center;
+  display: grid;
+  grid-template-columns: minmax(220px, 38%) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  width: 100%;
+  margin: clamp(2rem, 5vw, 4rem) 0;
+  align-items: center;
 }
 
 .research-section img {
   width: 100%;
-  height: 250px;
-
+  height: clamp(180px, 22vw, 260px);
   object-fit: cover;
-
   border-radius: 8px;
 }
 
@@ -255,53 +328,50 @@ body {
   margin-top: 0;
 }
 
+/* ==========================================================
+   Tablet
+   ========================================================== */
+
+@media (max-width: 1100px) {
+  .research-card {
+    grid-template-columns: 1fr;
+  }
+
+  .research-card img {
+    height: 200px;
+  }
+}
 
 /* ==========================================================
    Mobile
    ========================================================== */
 
-@media (max-width: 900px) {
-
-  .research-card {
-      grid-template-columns: 1fr;
-  }
-
-  .research-card img {
-      height: 220px;
-  }
-
-}
-@media (max-width:750px){
-
-  .hero-full img{
-    height:330px;
-  }
-
-  .intro-section{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-
-  .intro-photo{
-    position:static;
-  }
-
-  .intro-photo img{
-    width:180px;
-    height:180px;
-    margin:auto;
-  }
-
-  .profile-links-vertical a{
-    justify-content:center;
-  }
-
-}
-
 @media (max-width: 750px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .hero-full img {
+    height: 260px;
+  }
+
   .home-layout {
     grid-template-columns: 1fr;
     text-align: center;
+    width: 100%;
+    padding-inline: 1rem;
   }
 
   .home-sidebar {
@@ -309,12 +379,134 @@ body {
   }
 
   .home-sidebar img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     margin: auto;
   }
 
   .profile-links-vertical a {
     justify-content: center;
   }
+
+  .button {
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+  }
+
+  .research-card h3 {
+    margin: 1rem 1rem 0.4rem;
+  }
+
+  .research-card p {
+    margin: 0 1rem 1rem;
+  }
 }
+```
+
+```css
+.home-main,
+.research-card,
+.research-card p,
+.research-card h3,
+.research-section-text {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.home-main p,
+.research-card p,
+.research-section-text p {
+  max-width: 70ch;
+}
+
+@media (max-width: 750px) {
+  .home-main p,
+  .research-card p,
+  .research-section-text p {
+    max-width: 100%;
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  .research-card {
+    width: 100%;
+  }
+
+  .research-card p,
+  .research-card h3 {
+    padding-inline: 0.25rem;
+  }
+}
+```
+```css
+/* Constrain homepage text, buttons, links, and research themes */
+
+.home-main {
+  max-width: 900px;
+  min-width: 0;
+}
+
+.home-main > p {
+  max-width: 70ch;
+}
+
+.profile-links-vertical a,
+.button {
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.research-grid {
+  max-width: 900px;
+  width: 100%;
+}
+
+.research-card > div {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.research-card h3,
+.research-card p {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 750px) {
+  .home-main {
+    max-width: 100%;
+  }
+
+  .home-main > p {
+    max-width: 100%;
+  }
+
+  .research-grid {
+    max-width: 100%;
+  }
+
+  .research-card {
+    width: 100%;
+  }
+
+  .profile-links-vertical a {
+    justify-content: center;
+  }
+}
+
+.research-card-text {
+    min-width: 0;          /* This is the important line */
+    width: 100%;
+}
+
+.research-card-text h3,
+.research-card-text p {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: auto;
+}
+```
