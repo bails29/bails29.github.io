@@ -10,11 +10,20 @@
 
 ::: {.profile-links-vertical}
 
-[{{< iconify bi envelope-fill >}} Email](mailto:bailey.anderson@slf.ch)
+<a href="mailto:bailey.anderson@slf.ch">
+  <i class="bi bi-envelope-fill"></i>
+  <span>Email</span>
+</a>
 
-[{{< iconify bi mortarboard-fill >}} Google Scholar](https://scholar.google.com/citations?user=40Ppn9IAAAAJ){target="_blank"}
+<a href="https://scholar.google.com/citations?user=40Ppn9IAAAAJ" target="_blank">
+  <i class="bi bi-mortarboard-fill"></i>
+  <span>Google Scholar</span>
+</a>
 
-[{{< iconify bi building >}} WSL / ETH](https://www.slf.ch/en/staff/anderson/){target="_blank"}
+<a href="https://www.slf.ch/en/staff/anderson/" target="_blank">
+  <i class="bi bi-building"></i>
+  <span>WSL / ETH</span>
+</a>
 
 :::
 
